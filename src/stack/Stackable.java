@@ -10,28 +10,28 @@ public interface Stackable<T> {
      *
      * @param data elementToPush
      */
-    public void push(T data);
+    void push(T data);
 
     /**
      * Returns the top element of the list while removing it from the stack
      *
      * @return topElement
      */
-    public T pop();
+    T pop();
 
     /**
      * Returns the top element of the stack without removing it
      *
      * @return topElement
      */
-    public T peak();
+    T peek();
 
     /**
      * Returns the size of the stack
      *
      * @return int size of the stack
      */
-    public int size();
+    int size();
 
     /**
      * Checks if the stack is empty
@@ -39,16 +39,15 @@ public interface Stackable<T> {
      * @return  true   list is empty
      *          false  list is not empty
      */
-    public boolean empty();
-
+    boolean empty();
 
     /**
      * Clears the stack
      */
-    public void clearAll();
+    void clearAll();
 
     /**
      * Prints the complete stack
      */
-    public void printAll();
+    void printAll();
 }

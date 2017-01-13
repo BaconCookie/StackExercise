@@ -37,7 +37,7 @@ public class Stack<T> implements Stackable<T> {
     }
 
     @Override
-    public T peak() {
+    public T peek() {
         if (top != null) {
             return top.data;
         } else {
