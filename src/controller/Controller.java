@@ -2,12 +2,11 @@ package controller;
 
 import data.Student;
 import data.Student.DegreeProgram;
+import stack.Stack;
 import stack.Stackable;
-import Prog1Tools.IOTools;
 
-
-//import static Prog1Tools.IOTools.readInteger;
-//import static Prog1Tools.IOTools.readString;
+import static Prog1Tools.IOTools.readInteger;
+import static Prog1Tools.IOTools.readString;
 
 
 /**
@@ -16,7 +15,7 @@ import Prog1Tools.IOTools;
 public class Controller {
 
     private int action;
-    private Stackable<Student> stack;
+    private Stackable<Student> stack = new Stack<>();
 
     public Controller() {
     }
@@ -66,7 +65,7 @@ public class Controller {
         System.out.println(" 6   Clear the complete stack");
         System.out.println(" 0   Exit");
         System.out.println("Your pick: ");
-        action = IOTools.readInteger();
+        action = readInteger();
     }
 
     /**

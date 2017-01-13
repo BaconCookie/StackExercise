@@ -32,6 +32,7 @@ public class Stack<T> implements Stackable<T> {
             size--;
             return data;
         } else {
+            System.out.println("Stack is empty!");
             return null;
         }
     }
@@ -41,6 +42,7 @@ public class Stack<T> implements Stackable<T> {
         if (top != null) {
             return top.data;
         } else {
+            System.out.println("Stack is empty!");
             return null;
         }
     }
