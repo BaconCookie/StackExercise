@@ -46,7 +46,7 @@ public class StackTest {
         int expectedEmptySize = 0;
         int expectedAfterOnePushSize = 1;
         int expectedContainsStudentsSize = 3;
-        Student expectedStudentOnTop = new Student("Klaus", "Mueller", 334455, Student.DegreeProgram.COMPUTER_SCIENCE, 1);
+        Student expectedStudentOnTop = s3;
 
         assertEquals(expectedEmptySize, stackEmptyAfterSetup.size());
 
@@ -62,7 +62,7 @@ public class StackTest {
     public void pop() throws Exception {
         int expectedAfterOnePopSize = 2;
         stackCont3StudentsAfterSetup.pop();
-        Student expectedStudentOnTop = new Student("Anna", "Wei", 890066, Student.DegreeProgram.MATHEMATICS, 0);
+        Student expectedStudentOnTop = s2;
 
         assertEquals(expectedAfterOnePopSize, stackCont3StudentsAfterSetup.size());
         assertEquals(expectedStudentOnTop, stackCont3StudentsAfterSetup.peek());
@@ -72,7 +72,7 @@ public class StackTest {
     @Test
     public void peek() throws Exception {
 
-        Student expectedStudentOnTop = new Student("Klaus", "Mueller", 334455, Student.DegreeProgram.COMPUTER_SCIENCE, 1);
+        Student expectedStudentOnTop = s3;
         assertEquals(expectedStudentOnTop, stackCont3StudentsAfterSetup.peek());
 
     }

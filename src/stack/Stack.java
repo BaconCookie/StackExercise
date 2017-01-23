@@ -54,7 +54,7 @@ public class Stack<T> implements Stackable<T> {
 
     @Override
     public boolean empty() {
-        return top == null;
+        return (top == null && size == 0);
     }
 
     @Override
